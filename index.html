@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Genshin Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <main>
+    <div class="main-table">
+      <h1>Weapon Mats</h1>
+      <div class="sub-table">
+        <h2 class="title">Owned</h2>
+        <label>Green:</label>
+        <input class="green" id="gr-o-weap">
+        <label>Blue:</label>
+        <input class="blue" id="b-o-weap">
+        <label>Purple:</label>
+        <input class="purple" id="p-o-weap">
+        <label>Gold:</label>
+        <input class="gold" id="go-o-weap">
+      </div>
+      <div class="sub-table">
+        <h2 class="title">Required</h2>
+        <label>Green:</label>
+        <input class="green" id="gr-r-weap">
+        <label>Blue:</label>
+        <input class="blue" id="b-r-weap">
+        <label>Purple:</label>
+        <input class="purple" id="p-r-weap">
+        <label>Gold:</label>
+        <input class="gold" id="go-r-weap">
+      </div>
+      <input class="submit" type="submit" onclick="calc_weap()">
+      <div class="sub-table">
+        <h2 class="title">Left Over</h2>
+        <label>Green:</label>
+        <input class="green" id="gr-lo-weap" disabled>
+        <label>Blue:</label>
+        <input class="blue" id="b-lo-weap" disabled>
+        <label>Purple:</label>
+        <input class="purple" id="p-lo-weap" disabled>
+        <label>Gold:</label>
+        <input class="gold" id="go-lo-weap" disabled>
+        <h3 class="title" id="weap-runs">in 0 runs</h3>
+      </div>
+    </div>
+    <div class="main-table">
+      <h1>Talent Mats</h1>
+      <div class="sub-table">
+        <h2 class="title">Owned</h2>
+        <label>Green:</label>
+        <input class="green" id="g-o-tal">
+        <label>Blue:</label>
+        <input class="blue" id="b-o-tal">
+        <label>Purple:</label>
+        <input class="purple" id="p-o-tal">
+      </div>
+      <div class="sub-table">
+        <h2 class="title">Required</h2>
+        <label>Green:</label>
+        <input class="green" id="g-r-tal">
+        <label>Blue:</label>
+        <input class="blue" id="b-r-tal">
+        <label>Purple:</label>
+        <input class="purple" id="p-r-tal">
+      </div>
+      <input class="submit" type="submit" onclick="calc_tal()">
+      <div class="sub-table">
+        <h2 class="title">Left Over</h2>
+        <label>Green:</label>
+        <input class="green" id="g-lo-tal" disabled>
+        <label>Blue:</label>
+        <input class="blue" id="b-lo-tal" disabled>
+        <label>Purple:</label>
+        <input class="purple" id="p-lo-tal" disabled>
+        <h3 class="title" id="tal-runs">in 0 runs</h3>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
