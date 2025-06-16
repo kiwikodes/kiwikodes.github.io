@@ -183,10 +183,7 @@ export default function Hasse() {
                 Miles Scherer
               </a>
             </span>
-            <a
-              href="https://github.com/kiwikodes/kiwikodes.github.io"
-              className="hover:underline"
-            >
+            <a href="https://github.com/kiwikodes" className="hover:underline">
               GitHub
             </a>
             <span className="hover:underline">Feedback</span>
